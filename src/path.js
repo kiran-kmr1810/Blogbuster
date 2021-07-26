@@ -1,10 +1,13 @@
-import React from 'react';
+import React,{useEffect}from 'react';
 import { BrowserRouter as Router , Switch , Route} from 'react-router-dom';
 import App from './App';
 import Admin from "./admin";
 import Art from "./art"
 
 function Path(){
+    useEffect(() => {
+        document.title = "BlogBuster"
+      }, [])
     return (
         <Router>
             <div>
