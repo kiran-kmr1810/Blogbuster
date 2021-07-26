@@ -1,7 +1,8 @@
 import {
   Box, Text,Image,Link, HStack,useColorModeValue
 } from '@chakra-ui/react'
-import React from 'react'; 
+import React , {useCallback} from 'react'; 
+import {useHistory} from 'react-router-dom';
 
 const Article = (props) => {
   const overall = useColorModeValue("white", "gray.800")
@@ -11,8 +12,8 @@ const Article = (props) => {
   const gr = useColorModeValue("black", "green.400")
   const ye = useColorModeValue("black", "yellow.400")
   const bl = useColorModeValue("blue.500", "blue.300")
+  const history = useHistory();
 
-  
   return (
     <div>
       <Box p={4} display={{ md: "flex" }} 
@@ -53,7 +54,6 @@ const Article = (props) => {
           {props.date}
         </Text>
         </HStack>
-        <Link href= {`https://blogbuster.netlify.app//article/${props.uid}`} isExternal>
         <Text
           mt={1}
           display="block"
@@ -62,6 +62,9 @@ const Article = (props) => {
           fontWeight="extrabold"
           href="#"
           color={title}
+          onClick={
+            useCallback(() => history.push(`/article/${props.uid}`), [history])
+          }
           _hover={{
             color:"orange.400",
             }}
@@ -69,7 +72,6 @@ const Article = (props) => {
         >
           {props.heading}
         </Text>
-        </Link>
         <Text mt={2} 
         color={about}
         fontWeight="medium"
