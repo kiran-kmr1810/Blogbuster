@@ -15,4 +15,5 @@ Blogbuster is web application created using ReactJS and nodeJS. Blogbuster is a 
 https://blogbuster.netlify.app/
 
 # Screenshot
+![image](https://user-images.githubusercontent.com/59497178/127039456-869c5313-0277-414b-a5e7-88637766a4cb.png)
 
