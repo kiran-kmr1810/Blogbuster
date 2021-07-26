@@ -57,7 +57,7 @@ function Art() {
               py = "150px"
               >
               <Center>
-              <CircularProgress isIndeterminate color="green.400" size="150px" thickness="10px" />
+              <CircularProgress isIndeterminate color="black" size="150px" thickness="10px" />
               </Center>
               </Box>
               </Center>
@@ -68,7 +68,7 @@ function Art() {
         <Box 
         h="100%"
         w = {{ base: "365px", md: "300px", lg: "800px" }}
-        py = {{ base: "60px", md: "100px", lg: "100px" }}
+        py = {{ base: "30px", md: "30px", lg: "30px" }}
         >
         <Text
         fontWeight="extrabold"
