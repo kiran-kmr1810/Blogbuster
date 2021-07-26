@@ -53,7 +53,7 @@ const Article = (props) => {
           {props.date}
         </Text>
         </HStack>
-        <Link href= {`http://localhost:3000/article/${props.uid}`} isExternal>
+        <Link href= {`https://blogbuster.netlify.app//article/${props.uid}`} isExternal>
         <Text
           mt={1}
           display="block"
